@@ -1,0 +1,31 @@
+app-new-user-registrations {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.charts-section {
+    >div {
+        display: inline-block;
+        vertical-align: top;
+        background: #FFFFFF;
+        border-radius: 5px;
+        height: 300px;
+        margin: 20px;
+        padding: 20px;
+        // width: 30%;
+    }
+    .chart-heading {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .first-chart {
+        width: 31%;
+    }
+    .second-chart {
+        width: 31%;
+
+    }
+    .third-chart {
+        width: 28%;
+    }
+}

@@ -1,0 +1,64 @@
+#app-header {
+
+    >div {
+        display: inline-block;
+    }
+ .search-box{
+        margin-top: 3px;
+        input, span {
+            height: 35px;
+        }
+        input {
+            border-left: unset;
+            vertical-align: middle;
+        }
+        span {
+            background-color: unset;
+            border-right: unset;
+            i {
+                font-size: 15px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .header-right-menu {
+        text-align: right;
+        position: relative;
+        right: 0;
+        >div {
+            display: inline-flex;
+            flex-direction: row;
+            vertical-align: middle;
+            margin: 0px 10px;
+            i {
+                font-size: 18px;
+            }
+            img {
+                width: 40px;
+                border: 1px solid #c1e0eb;
+                padding: 7px 10px;
+                border-radius: 5px;
+                vertical-align: middle;
+                display: inline-block;
+                margin: 0px 10px;
+            }
+        }
+        .select-language {
+            width: 80px;
+        }
+        .user-profile {
+            span {
+                display: inline-block;
+                margin-top: 4px;
+                i {
+                    vertical-align: text-top;
+                    font-size: 14px;
+                    color: #949090;
+                    margin: 5px;
+                }
+
+            }
+        }
+    }
+}

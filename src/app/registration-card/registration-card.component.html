@@ -1,0 +1,11 @@
+<div id="registrations-card" *ngIf="rdata">
+    <img [src]="rdata.picture" [alt]="rdata.name" class="reg-card-image">
+    <div class="reg-card-user-data">
+        <span>{{rdata.name}}</span>
+        <label>{{rdata.country}}</label>
+    </div>
+    <div class="progress reg-card-progress" role="progressbar" aria-label="Progress" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar" [style.width.%]="rdata.progress">{{rdata.progress}}%</div>
+    </div>
+    <button type="button" class="btn btn-light reg-card-button">More</button>
+</div>

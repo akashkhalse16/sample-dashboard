@@ -1,0 +1,29 @@
+<section id="dashboard">
+  <div class="top-cards" *ngIf="this.dashboardData?.['top_cards']">
+    <ng-container *ngFor="let cardData of this.dashboardData?.['top_cards']">
+      <app-dashboard-cards [cardData]="cardData"></app-dashboard-cards>
+    </ng-container>
+  </div>
+  <div class="middle-cards">
+    <app-recent-orders
+      [recentOrdersData]="this.dashboardData?.['recent_orders']"
+    ></app-recent-orders>
+    <app-new-user-registrations
+      [newUserRegistrationData]="this.dashboardData?.['new_users']"
+    ></app-new-user-registrations>
+  </div>
+  <div class="charts-section">
+    <div class="first-chart">
+      <p class="chart-heading">Sales Statistics</p>
+      <app-line-chart></app-line-chart>
+    </div>
+    <div class="second-chart">
+      <p class="chart-heading">Balance Overview</p>
+      <app-bar-chart></app-bar-chart>
+    </div>
+    <div class="third-chart">
+      <p class="chart-heading">Top Products</p>
+      <app-pie-chart></app-pie-chart>
+    </div>
+  </div>
+</section>

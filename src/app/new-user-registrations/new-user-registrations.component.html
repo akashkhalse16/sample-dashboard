@@ -1,0 +1,10 @@
+<section id="new-user-registrantions">
+    <div class="card-heading">
+        <p>New User Registrations</p>
+    </div>
+    <div class="registrations-data">
+        <div *ngFor="let rdata of this.newUserRegistrationData">
+            <app-registration-card [rdata]="rdata"></app-registration-card>
+        </div>
+    </div>
+</section>
